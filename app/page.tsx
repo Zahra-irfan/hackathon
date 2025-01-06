@@ -27,7 +27,7 @@ import move from "@/app/components/pictures/move.png";
 import CTA from "@/app/components/pictures/CTA.png";
 import Indicator from "@/app/components/pictures/Indicator.png";
 import Images from "@/app/components/pictures/Images.png"
-import { url } from "inspector";
+
 
 export default function Home() {
   return (
