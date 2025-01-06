@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link";
 import logo from "@/app/components/pictures/logo.png"
 import profile from "@/app/components/pictures/profile.png"
 import search from "@/app/components/pictures/search.png"
@@ -13,8 +14,23 @@ export default function Navbar(){
    <div className="w-[130px] h-[41x] text-black text-[34px] font-bold">Furniro</div>
 </div>
 <div className="ml-[266px] flex gap-[75px] w-[430px] h-[24px] font-medium text-base items-center">
-    <div>Home</div>
-    <div>Shop</div>
+<Link
+  href="/"
+  className="hover:underline transition-transform duration-500 ease-in-out"
+>
+  <div className="hover:scale-105 transition-all duration-100 active:scale-110 active:opacity-80">
+    Home
+  </div>
+</Link>
+    <Link
+  href="/Shop"
+  className="hover:underline transition-transform duration-500 ease-in-out"
+>
+  <div className="hover:scale-105 transition-all duration-100 active:scale-110 active:opacity-80">
+    Shop
+  </div>
+</Link>
+
     <div>Blog</div>
     <div>Contact</div>
 </div>

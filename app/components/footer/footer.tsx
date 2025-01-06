@@ -1,6 +1,7 @@
 export default function Footer(){
     return(
-        <div className="w-[1440px] h-[505px]">
+        <footer>
+        <div className="w-[1440px] h-[505px] border-t border-black border-opacity-[17%]">
             <div className="w-[1240.01px] h-[419px] mt-[48px] mb-[38px] ml-[100px] mr-[99.99px]">
                 <div className="w-[1133.01px] h-[312px] flex">
                     <div>
@@ -32,13 +33,18 @@ export default function Footer(){
                         <div className="info w-[286px] h-[101px] flex flex-col gap-[53px]">
                             <div className="w-[86px] h-[24px] text-[#9F9F9F] font-medium text-base leading-6">Newsletter</div>
                             <div className="w-[286px] h-6 flex items-center">
-                                <input type="text" placeholder="Enter Your Email Address" className="underline underline-offset-[3px] decoration-black text-[#9F9F9F] font-normal text-sm leading-[21px] w-[173px] h-[21px] "/>
+                                <input type="text" placeholder="Enter Your Email Address" className="underline underline-offset-[2.911px] decoration-black text-[#9F9F9F] font-normal text-sm leading-[21px] w-[173px] h-[21px] "/>
                                 <div className="w-[75px] h-[21px] font-medium text-sm leading-[21px] underline underline-offset-4">SUBSCRIBE</div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div className="w-[1240.01] h-[59px] mt-[48px] border-t border-[#D9D9D9]">
+                    <div className="w-[239px] h-[24px] mt-[35px] ml-[2.01px] mr-[999.01] text-black font-normal text-base leading-6">2023 furino. All rights reverved</div>
+                </div>
             </div>
+           
         </div>
+        </footer>
     )
 }
